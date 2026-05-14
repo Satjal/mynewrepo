@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sunny Bites | Game</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+#gameCanvas {
+    background-image: url('images/grass.jpg');
+    background-size: cover;
+    border: 2px solid black;
+    display: block;
+    margin: 20px auto;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sunny Bites Restaurant</h1>
+<nav>
+<ul class="navbar">
+<li><a href="home.html">Home</a></li>
+<li><a href="game.html">Game</a></li>
+<li><a href="assignment4.html">Member</a></li>
+<li><a href="location.html">Location</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="container">
+
+<h2>Bug Smasher Game</h2>
+
+<p>Score: <span id="score">0</span></p>
+
+<canvas id="gameCanvas" width="500" height="400"></canvas>
+
+<br>
+<button onclick="resetScore()">Reset Score</button>
+<button onclick="resetSpeed()">Reset Speed</button>
+
+</main>
+
+<script src="js/game.js"></script>
+
+</body>
+</html>
